@@ -30,7 +30,7 @@ const supports = [
 
 export default function FooterSection() {
   return (
-    <div className="mt-20">
+    <div className="mt-20 px-5 lg:px-0">
       <div className="max-w-6xl mx-auto items-center bg-[#09090b] p-16 rounded-3xl">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-10">
           <div className="max-w-60 space-y-5">
@@ -39,7 +39,7 @@ export default function FooterSection() {
             <p>© Polar Software Inc. 2024</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-20">
+          <div className="grid grid-cols-2 gap-10 lg:gap-20">
             <BuildDevCard title="Community" communities={communities} />
             <BuildDevCard title="Support" communities={supports} />
           </div>

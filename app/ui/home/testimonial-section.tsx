@@ -3,7 +3,7 @@ import { h1 } from "framer-motion/client";
 
 export default function TestimonialSection() {
   return (
-    <div className="mt-20">
+    <div className="mt-20 px-5 lg:px-0">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl lg:text-4xl text-center text-white">
           Serving world-class developers, world-wide

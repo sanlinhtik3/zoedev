@@ -2,8 +2,8 @@ import { Button, Chip } from "@nextui-org/react";
 
 export default function LearnUseSection() {
   return (
-    <div className="mt-20">
-      <div className="max-w-6xl mx-auto flex justify-center items-center bg-[#09090b] p-16 rounded-3xl">
+    <div className="mt-20 px-5 lg:px-0">
+      <div className="max-w-6xl mx-auto flex justify-center items-center bg-[#09090b] p-10 lg:p-16 rounded-3xl">
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="max-w-2xl space-y-5">
             <h1 className="text-5xl text-white max-w-2xl mx-auto leading-tight">
