@@ -12,11 +12,9 @@ export default function LearnUseSection() {
 
             <p>Sell access to your premium apps, services or APIs with ease.</p>
 
-            <Button color="primary" radius="full">
-              Get Started
-            </Button>
+            <Button color="primary">Get Started</Button>
 
-            <Button color="primary" radius="full" variant="light">
+            <Button color="primary" variant="light">
               Sell all benefits
             </Button>
           </div>

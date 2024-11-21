@@ -7,12 +7,12 @@ import TestimonialSection from "./ui/home/testimonial-section";
 
 export default function Home() {
   return (
-    <div className=" mb-96">
+    <div className="mb-96">
       <NavbarDemo />
       <HeroSection />
       <BuiltDevSection />
-      <TestimonialSection />
       <LearnUseSection />
+      <TestimonialSection />
       <FooterSection />
     </div>
   );
