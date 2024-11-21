@@ -35,7 +35,7 @@ const config: Config = {
         dark: {
           layout: {}, // dark theme layout tokens
           colors: {
-            background: "#0f1114", // or DEFAULT
+            background: "#000000", // or DEFAULT #0f1114
             foreground: "#8799ab", // or 50 to 900 DEFAULT
             primary: {
               //... 50 to 900
@@ -44,13 +44,13 @@ const config: Config = {
               200: "#80f2ec",
               300: "#4dece5",
               400: "#26e8e0",
-              500: "#23fdfe", // your primary color
+              500: "#007bff", // your primary color
               600: "#07dbbe",
               700: "#06b19a",
               800: "#048976",
               900: "#036054",
               foreground: "#f1f3f5",
-              DEFAULT: "#23fdfe",
+              DEFAULT: "#007bff",
             },
           }, // dark theme colors
         },
