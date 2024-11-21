@@ -8,7 +8,7 @@ export default function HeroSection() {
         <span className="text-gray-400">in minutes</span>
       </h1>
 
-      <Button size="lg" className="mt-5">
+      <Button size="lg" className="mt-10">
         Learn YouTube
       </Button>
     </div>
