@@ -4,6 +4,7 @@ import BuiltDevSection from "./ui/home/built-for-developers";
 import LearnUseSection from "./ui/home/learn-use-section";
 import FooterSection from "./ui/home/footer-section";
 import TestimonialSection from "./ui/home/testimonial-section";
+import ShowCaseSection from "./ui/home/show-case-section";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <BuiltDevSection />
       <LearnUseSection />
       <TestimonialSection />
+      <ShowCaseSection />
       <FooterSection />
     </div>
   );
