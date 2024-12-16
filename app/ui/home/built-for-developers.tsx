@@ -2,7 +2,7 @@ import { Chip } from "@nextui-org/react";
 
 export default function BuiltDevSection() {
   return (
-    <div className="px-5 lg:px-0">
+    <div className="px-5 lg:px-0 mt-32">
       <div className="max-w-6xl mx-auto flex justify-center items-center bg-[#09090b] p-10 lg:p-16 rounded-3xl">
         <div className=" space-y-10">
           <h1 className="text-center">Built for Developers</h1>

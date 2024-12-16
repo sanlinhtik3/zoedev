@@ -6,6 +6,7 @@ import FooterSection from "./ui/home/footer-section";
 import TestimonialSection from "./ui/home/testimonial-section";
 import ShowCaseSection from "./ui/home/show-case-section";
 import YoutubeUI from "./ui/home/youtube-ui";
+import TonSellers from "./ui/home/ton-sellers";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <NavbarDemo />
       <HeroSection />
       <YoutubeUI />
+      <TonSellers />
       <BuiltDevSection />
       <LearnUseSection />
       <TestimonialSection />
