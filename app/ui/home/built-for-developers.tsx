@@ -1,4 +1,5 @@
 import { Chip } from "@nextui-org/react";
+import Reveal from "../framer-motion/reveal";
 
 export default function BuiltDevSection() {
   return (
@@ -7,11 +8,15 @@ export default function BuiltDevSection() {
         <div className=" space-y-10">
           <h1 className="text-center">Built for Developers</h1>
           <h1 className="text-4xl text-white text-center max-w-2xl mx-auto">
-            The fastest way to add SaaS & digital products to your stack
+            <Reveal>
+              The fastest way to add SaaS & digital products to your stack
+            </Reveal>
           </h1>
 
           <div className="text-center">
-            <Chip>Integriate with your stack</Chip>
+            <Chip>
+              <Reveal>Integriate with your stack</Reveal>
+            </Chip>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -43,8 +48,12 @@ const BuildDevCard = ({
 }) => {
   return (
     <div className="bg-[#0e0e10] p-8 rounded-2xl">
-      <h1 className="text-white text-xl">{title}</h1>
-      <p className="mt-3">{description}</p>
+      <h1 className="text-white text-xl">
+        <Reveal>{title}</Reveal>
+      </h1>
+      <p className="mt-3">
+        <Reveal>{description}</Reveal>
+      </p>
     </div>
   );
 };

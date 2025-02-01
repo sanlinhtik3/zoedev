@@ -1,11 +1,15 @@
 import { Button, Image } from "@nextui-org/react";
 import Link from "next/link";
+import Reveal from "../framer-motion/reveal";
 
 export default function HeroSection() {
   return (
     <div className="text-center py-40">
       <h1 className="text-5xl md:text-7xl lg:text-9xl max-w-2xl mx-auto text-white">
-        If you learn <br /> you will <span className="text-gray-400">earn</span>
+        <Reveal>
+          If you learn <br /> you will{" "}
+          <span className="text-gray-400">earn</span>
+        </Reveal>
       </h1>
 
       <Button

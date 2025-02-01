@@ -1,4 +1,5 @@
 import { Image } from "@nextui-org/react";
+import Reveal from "../framer-motion/reveal";
 
 const showcases = [
   {
@@ -37,12 +38,14 @@ export default function ShowCaseSection() {
     <div className="mt-32 px-5 lg:px-0">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl lg:text-3xl text-center text-white font-bold">
-          Tools to express your creativity in 3D
+          <Reveal>Tools to express your creativity in 3D</Reveal>
         </h1>
 
         <h4 className="text-xl lg:text-2xl  text-center text-gray-400 max-w-3xl mx-auto mt-5">
-          3D opens a new door for creativity. A solid set of features that will
-          help you create your best 3d designs.
+          <Reveal>
+            3D opens a new door for creativity. A solid set of features that
+            will help you create your best 3d designs.
+          </Reveal>
         </h4>
 
         <div className="grid lg:grid-cols-2 gap-10 mt-10">
@@ -67,9 +70,11 @@ function ShowCaseCard({ title, image, description }: ShowcaseType) {
       <div className="bg-[#181a1d] rounded-2xl p-10">
         <Image src={image} width={3840} alt="YouTube" />
         <h1 className="text-lg font-bold mt-5 text-center text-white">
-          {title}
+          <Reveal>{title}</Reveal>
         </h1>
-        <p className="mt-3 text-center">{description}</p>
+        <p className="mt-3 text-center">
+          <Reveal>{description}</Reveal>
+        </p>
       </div>
     </>
   );

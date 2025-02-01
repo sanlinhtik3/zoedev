@@ -1,12 +1,13 @@
 import { Button, Chip, Link, User } from "@nextui-org/react";
 import { h1 } from "framer-motion/client";
+import Reveal from "../framer-motion/reveal";
 
 export default function TestimonialSection() {
   return (
     <div className="mt-20 px-5 lg:px-0">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl lg:text-4xl text-center text-white">
-          Serving world-class developers, world-wide
+          <Reveal>Serving world-class developers, world-wide</Reveal>
         </h1>
 
         <div className="grid lg:grid-cols-2 gap-10 w-full mt-10">
@@ -38,10 +39,14 @@ const BuildDevCard = ({
   return (
     <div className="bg-[#0e0e10] p-8 rounded-2xl">
       <User
-        name={<h1 className="text-white">Junior Garcia</h1>}
+        name={
+          <h1 className="text-white">
+            <Reveal>Junior Garcia</Reveal>
+          </h1>
+        }
         description={
           <Link href="https://twitter.com/jrgarciadev" size="sm" isExternal>
-            @jrgarciadev
+            <Reveal>@jrgarciadev</Reveal>
           </Link>
         }
         avatarProps={{
@@ -50,7 +55,9 @@ const BuildDevCard = ({
       />
 
       <div className="ml-12 mt-3">
-        <p className="text-white">{description}</p>
+        <p className="text-white">
+          <Reveal>{description}</Reveal>
+        </p>
       </div>
     </div>
   );

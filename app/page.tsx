@@ -7,14 +7,16 @@ import TestimonialSection from "./ui/home/testimonial-section";
 import ShowCaseSection from "./ui/home/show-case-section";
 import YoutubeUI from "./ui/home/youtube-ui";
 import TonSellers from "./ui/home/ton-sellers";
+import Example from "./example";
 
 export default function Home() {
   return (
     <div className="">
       <NavbarDemo />
+      {/* <Example /> */}
       <HeroSection />
       <YoutubeUI />
-      <TonSellers />
+      {/* <TonSellers /> */}
       <BuiltDevSection />
       <LearnUseSection />
       <TestimonialSection />

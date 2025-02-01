@@ -1,3 +1,5 @@
+import Reveal from "../framer-motion/reveal";
+
 const communities = [
   {
     name: "Discord",
@@ -34,9 +36,13 @@ export default function FooterSection() {
       <div className="max-w-6xl mx-auto items-center bg-[#09090b] p-16 rounded-3xl">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-10">
           <div className="max-w-60 space-y-5">
-            <h1 className="text-4xl text-white">ZOEDEV</h1>
+            <h1 className="text-4xl text-white">
+              <Reveal>ZOEDEV</Reveal>
+            </h1>
 
-            <p>© Polar Software Inc. 2024</p>
+            <p>
+              <Reveal>© Polar Software Inc. 2024</Reveal>
+            </p>
           </div>
 
           <div className="grid grid-cols-2 gap-10 lg:gap-20">
@@ -61,10 +67,14 @@ const BuildDevCard = ({
 }) => {
   return (
     <div className="rounded-2xl">
-      <h1 className="text-white text-xl">{title}</h1>
+      <h1 className="text-white text-xl">
+        <Reveal>{title}</Reveal>
+      </h1>
       <div className="mt-3">
         {communities.map((community) => (
-          <div className="">{community.name}</div>
+          <div className="">
+            <Reveal>{community.name}</Reveal>
+          </div>
         ))}
       </div>
     </div>

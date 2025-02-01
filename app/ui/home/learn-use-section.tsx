@@ -1,4 +1,5 @@
 import { Button, Chip } from "@nextui-org/react";
+import Reveal from "../framer-motion/reveal";
 
 export default function LearnUseSection() {
   return (
@@ -7,15 +8,21 @@ export default function LearnUseSection() {
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="max-w-2xl space-y-5">
             <h1 className="text-5xl text-white max-w-2xl mx-auto leading-tight">
-              Automated benefits like never before
+              <Reveal>Automated benefits like never before</Reveal>
             </h1>
 
-            <p>Sell access to your premium apps, services or APIs with ease.</p>
+            <p>
+              <Reveal>
+                Sell access to your premium apps, services or APIs with ease.
+              </Reveal>
+            </p>
 
-            <Button color="primary">Get Started</Button>
+            <Button color="primary">
+              <Reveal>Get Started</Reveal>
+            </Button>
 
             <Button color="primary" variant="light">
-              Sell all benefits
+              <Reveal>Sell all benefits</Reveal>
             </Button>
           </div>
 
@@ -57,8 +64,12 @@ const BuildDevCard = ({
 }) => {
   return (
     <div className="bg-[#0e0e10] p-8 rounded-2xl">
-      <h1 className="text-white text-xl">{title}</h1>
-      <p className="mt-3">{description}</p>
+      <h1 className="text-white text-xl">
+        <Reveal>{title}</Reveal>
+      </h1>
+      <p className="mt-3">
+        <Reveal>{description}</Reveal>
+      </p>
     </div>
   );
 };
@@ -73,17 +84,31 @@ const BuildDevCardPrice = ({
   return (
     <div className="bg-[#0e0e10] p-3 rounded-3xl flex flex-col">
       <div className="flex-1 p-5">
-        <h1 className="text-white text-xl ">{title}</h1>
-        <p className="mt-3">{description}</p>
+        <h1 className="text-white text-xl">
+          <Reveal>{title}</Reveal>
+        </h1>
+        <p className="mt-3">
+          <Reveal>{description}</Reveal>
+        </p>
       </div>
 
       <div className="bg-[#151619] p-8 rounded-2xl">
-        <h1 className="text-white text-xl">Included</h1>
+        <h1 className="text-white text-xl">
+          <Reveal>Included</Reveal>
+        </h1>
         <div className="space-y-3 mt-3">
-          <h1 className="text-white text-xl">Private GitHub repository</h1>
-          <h1 className="text-white text-xl">Private GitHub repository</h1>
-          <h1 className="text-white text-xl">Private GitHub repository</h1>
-          <h1 className="text-white text-xl">Private GitHub repository</h1>
+          <h1 className="text-white text-xl">
+            <Reveal>Private GitHub repository</Reveal>
+          </h1>
+          <h1 className="text-white text-xl">
+            <Reveal>Private GitHub repository</Reveal>
+          </h1>
+          <h1 className="text-white text-xl">
+            <Reveal>Private GitHub repository</Reveal>
+          </h1>
+          <h1 className="text-white text-xl">
+            <Reveal>Private GitHub repository</Reveal>
+          </h1>
         </div>
       </div>
     </div>
