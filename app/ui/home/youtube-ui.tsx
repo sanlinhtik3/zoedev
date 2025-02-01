@@ -19,7 +19,7 @@ export default function YoutubeUI() {
           <div className="flex items-center gap-2 mt-5">
             <Reveal>
               <Avatar
-                src="https://yt3.googleusercontent.com/8fzXKXHyzB7dFKn5xY2J2_EO7gZaIgFvwk3Md2SZVTFi-AJhvYhWxoMpoh_Ii3vePmk7b7-dC4I=s160-c-k-c0x00ffffff-no-rj"
+                src="https://yt3.googleusercontent.com/O-4SwyAGvdxP5H77od9kw8flp25ZGhA0zvsp_cvtCGpyAWvK1my-QD7uzClPSnu522rfC4oUYBA=s160-c-k-c0x00ffffff-no-rj"
                 isBordered
                 radius="full"
                 className="w-20 h-20 lg:w-40 lg:h-40 text-large"

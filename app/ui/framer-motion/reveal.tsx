@@ -52,6 +52,7 @@ export default function Reveal({
           right: 0,
           background: "#007bff",
           zIndex: 20,
+          display: "block",
         }}
       ></motion.div>
     </div>

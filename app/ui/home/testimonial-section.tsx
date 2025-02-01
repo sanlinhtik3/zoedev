@@ -7,13 +7,15 @@ export default function TestimonialSection() {
     <div className="mt-20 px-5 lg:px-0">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl lg:text-4xl text-center text-white">
-          <Reveal>Serving world-class developers, world-wide</Reveal>
+          <Reveal width="100%">
+            Serving world-class developers, world-wide
+          </Reveal>
         </h1>
 
         <div className="grid lg:grid-cols-2 gap-10 w-full mt-10">
           <BuildDevCard
             title="npx polar-init"
-            description="Bootstrap products, subscriptions, checkouts & webhooks in your Next.js or Nuxt.js project."
+            description="Bootstrap products, subscriptions, checkouts & webhooks in your Next.js project."
           />
           <BuildDevCard
             title="Sandbox"
@@ -37,7 +39,7 @@ const BuildDevCard = ({
   description: string;
 }) => {
   return (
-    <div className="bg-[#0e0e10] p-8 rounded-2xl">
+    <div className="bg-[#131316] p-8 rounded-2xl">
       <User
         name={
           <h1 className="text-white">

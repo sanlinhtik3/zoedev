@@ -3,7 +3,7 @@
 import { Avatar, Button, Input, Select, SelectItem } from "@nextui-org/react";
 import { useState } from "react";
 
-export const animals = [
+const animals = [
   { key: "cat", label: "Cat" },
   { key: "dog", label: "Dog" },
 ];

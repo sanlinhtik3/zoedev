@@ -33,7 +33,7 @@ const supports = [
 export default function FooterSection() {
   return (
     <div className="mt-20 px-5 lg:px-0">
-      <div className="max-w-6xl mx-auto items-center bg-[#09090b] p-16 rounded-3xl">
+      <div className="max-w-6xl mx-auto items-center bg-[#131316] p-16 rounded-3xl">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-10">
           <div className="max-w-60 space-y-5">
             <h1 className="text-4xl text-white">
@@ -41,9 +41,11 @@ export default function FooterSection() {
             </h1>
 
             <p>
-              <Reveal>© Polar Software Inc. 2024</Reveal>
+              <Reveal>© zoe_dev 2024</Reveal>
             </p>
           </div>
+
+          {/* Polar */}
 
           <div className="grid grid-cols-2 gap-10 lg:gap-20">
             <BuildDevCard title="Community" communities={communities} />

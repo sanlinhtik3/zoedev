@@ -4,7 +4,7 @@ import Reveal from "../framer-motion/reveal";
 export default function LearnUseSection() {
   return (
     <div className="mt-20 px-5 lg:px-0">
-      <div className="max-w-6xl mx-auto flex justify-center items-center bg-[#09090b] p-10 lg:p-16 rounded-3xl">
+      <div className="max-w-6xl mx-auto flex justify-center items-center bg-[#131316] p-10 lg:p-16 rounded-3xl">
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="max-w-2xl space-y-5">
             <h1 className="text-5xl text-white max-w-2xl mx-auto leading-tight">
@@ -30,7 +30,7 @@ export default function LearnUseSection() {
             <div className="grid gap-5">
               <BuildDevCard
                 title="npx polar-init"
-                description="Bootstrap products, subscriptions, checkouts & webhooks in your Next.js or Nuxt.js project."
+                description="Bootstrap products, subscriptions, checkouts & webhooks in your Next.js project."
               />
               <BuildDevCard
                 title="Sandbox"
@@ -63,7 +63,7 @@ const BuildDevCard = ({
   description: string;
 }) => {
   return (
-    <div className="bg-[#0e0e10] p-8 rounded-2xl">
+    <div className="bg-[#19191d] p-8 rounded-2xl">
       <h1 className="text-white text-xl">
         <Reveal>{title}</Reveal>
       </h1>
