@@ -1,4 +1,4 @@
-import { Chip } from "@nextui-org/react";
+import { Chip } from "@heroui/react";
 import Reveal from "../framer-motion/reveal";
 
 export default function BuiltDevSection() {

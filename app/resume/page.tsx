@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, Input } from "@nextui-org/react";
+import { Avatar, Input } from "@heroui/react";
 import { useState } from "react";
 
 export default function Page() {

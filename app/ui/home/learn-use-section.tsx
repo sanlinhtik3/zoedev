@@ -1,4 +1,4 @@
-import { Button, Chip } from "@nextui-org/react";
+import { Button, Chip } from "@heroui/react";
 import Reveal from "../framer-motion/reveal";
 
 export default function LearnUseSection() {

@@ -1,4 +1,4 @@
-import { Avatar } from "@nextui-org/react";
+import { Avatar } from "@heroui/react";
 import { TabsUI } from "./ui/component/tabs";
 
 export default function Home() {

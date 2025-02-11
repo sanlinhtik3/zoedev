@@ -1,4 +1,4 @@
-import { Button, Chip } from "@nextui-org/react";
+import { Button, Chip } from "@heroui/react";
 import CoinListBox from "./coin-list-box";
 import Link from "next/link";
 

@@ -1,5 +1,6 @@
-import { Image } from "@nextui-org/react";
+import { Image } from "@heroui/react";
 import Reveal from "../framer-motion/reveal";
+import clsx from "clsx";
 
 const showcases = [
   {
@@ -33,7 +34,7 @@ const showcases = [
   },
 ];
 
-export default function ShowCaseSection() {
+export default function ShowCaseSection({ isMobile }: { isMobile?: boolean }) {
   return (
     <div className="mt-32 px-5 lg:px-0">
       <div className="max-w-6xl mx-auto">
@@ -48,11 +49,19 @@ export default function ShowCaseSection() {
           </Reveal>
         </h4>
 
-        <div className="grid lg:grid-cols-2 gap-10 mt-10">
-          {showcases.map((showcase) => (
-            <ShowCaseCard key={showcase.id} {...showcase} />
-          ))}
-        </div>
+        {!isMobile ? (
+          <div className={clsx("grid lg:grid-cols-2 gap-10 mt-10")}>
+            {showcases.map((showcase) => (
+              <ShowCaseCard key={showcase.id} {...showcase} />
+            ))}
+          </div>
+        ) : (
+          <div className={clsx("grid gap-10 mt-10")}>
+            {showcases.map((showcase) => (
+              <ShowCaseCardMobile key={showcase.id} {...showcase} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -65,6 +74,22 @@ type ShowcaseType = {
 };
 
 function ShowCaseCard({ title, image, description }: ShowcaseType) {
+  return (
+    <>
+      <div className="bg-[#181a1d] rounded-2xl p-10">
+        <Image src={image} width={3840} alt="YouTube" />
+        <h1 className="text-lg font-bold mt-5 text-center text-white">
+          <Reveal>{title}</Reveal>
+        </h1>
+        <p className="mt-3 text-center">
+          <Reveal>{description}</Reveal>
+        </p>
+      </div>
+    </>
+  );
+}
+
+function ShowCaseCardMobile({ title, image, description }: ShowcaseType) {
   return (
     <>
       <div className="bg-[#181a1d] rounded-2xl p-10">

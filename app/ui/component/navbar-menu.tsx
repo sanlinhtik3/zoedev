@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Image } from "@nextui-org/react";
+import { Image } from "@heroui/react";
 
 const transition = {
   type: "spring",

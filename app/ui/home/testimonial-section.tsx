@@ -1,4 +1,4 @@
-import { Button, Chip, Link, User } from "@nextui-org/react";
+import { Button, Chip, Link, User } from "@heroui/react";
 import { h1 } from "framer-motion/client";
 import Reveal from "../framer-motion/reveal";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, Button, Input, Select, SelectItem } from "@nextui-org/react";
+import { Avatar, Button, Input, Select, SelectItem } from "@heroui/react";
 import { useState } from "react";
 
 const animals = [

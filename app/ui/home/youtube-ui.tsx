@@ -1,4 +1,4 @@
-import { Avatar, Button, Image } from "@nextui-org/react";
+import { Avatar, Button, Image } from "@heroui/react";
 import Link from "next/link";
 import Reveal from "../framer-motion/reveal";
 

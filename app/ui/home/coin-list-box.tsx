@@ -9,7 +9,7 @@ import {
   Chip,
   ScrollShadow,
   Avatar,
-} from "@nextui-org/react";
+} from "@heroui/react";
 
 export const users = [
   {
