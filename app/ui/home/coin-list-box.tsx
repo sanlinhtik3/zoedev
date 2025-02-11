@@ -1,6 +1,6 @@
 "use client";
 
-import type { Selection } from "@react-types/shared";
+// import type { Selection } from "@react-types/shared";
 
 import React from "react";
 import {
@@ -42,7 +42,7 @@ export const ListboxWrapper = ({ children }: { children: React.ReactNode }) => (
 );
 
 export default function CoinListBox() {
-  const [values, setValues] = React.useState<Selection>(new Set(["1"]));
+  const [values, setValues] = React.useState<any>(new Set(["1"]));
 
   const arrayValues = Array.from(values);
 
@@ -58,9 +58,7 @@ export default function CoinListBox() {
         orientation="horizontal"
       >
         {arrayValues.map((value) => (
-          <Chip key={value}>
-            {users.find((user) => `${user.id}` === `${value}`)?.name}
-          </Chip>
+          <Chip>{users.find((user) => `${user.id}` === `${value}`)?.name}</Chip>
         ))}
       </ScrollShadow>
     );
