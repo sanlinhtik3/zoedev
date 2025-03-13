@@ -8,6 +8,7 @@ import ShowCaseSection from "./ui/home/show-case-section";
 import YoutubeUI from "./ui/home/youtube-ui";
 import TonSellers from "./ui/home/ton-sellers";
 import Example from "./example";
+import SkillSection from "./ui/home/skill-section";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <YoutubeUI />
       {/* <TonSellers /> */}
       <BuiltDevSection />
+      <SkillSection />
       <LearnUseSection />
       <TestimonialSection />
       <ShowCaseSection />
